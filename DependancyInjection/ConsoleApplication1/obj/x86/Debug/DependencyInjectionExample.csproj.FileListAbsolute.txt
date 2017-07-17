@@ -1,0 +1,9 @@
+c:\users\joshajay\documents\visual studio 2010\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+c:\users\joshajay\documents\visual studio 2010\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+c:\users\joshajay\documents\visual studio 2010\Projects\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+c:\users\joshajay\documents\visual studio 2010\Projects\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\Users\joshajay\Documents\Visual Studio 2010\Projects\ConsoleApplication1\ConsoleApplication1\obj\x86\Debug\DependencyInjectionExample.csprojResolveAssemblyReference.cache
+C:\Users\joshajay\Documents\Visual Studio 2010\Projects\DependancyInjection\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\Users\joshajay\Documents\Visual Studio 2010\Projects\DependancyInjection\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
+C:\AJ\DependancyInjection\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\AJ\DependancyInjection\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb
