@@ -1,0 +1,52 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BinarySearchTree
+{
+    class BinaryTree
+    {
+         Node parent;
+
+        public void Insert(int currentItem)
+        {
+            if (parent == null)
+            {
+                parent = new Node(currentItem);
+            }
+            else
+            {
+                if (currentItem >= parent.item)
+                {
+                    //store in right!!
+                    parent.rightChild.item = currentItem;
+                }
+                else
+                {
+                    //store in left!!
+                    parent.leftChild.item = currentItem;
+                }
+            }
+            
+           
+        }
+    }
+
+    protected class Node
+    {
+        public int item;
+        public Node leftChild;
+        public Node rightChild;
+
+        public Node(int item)
+        {
+            this.item = item;
+            leftChild = null;
+            rightChild = null;
+        }
+    }
+
+
+}

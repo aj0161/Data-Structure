@@ -1,0 +1,76 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BinarySearchTree
+{
+    class BinaryTree
+    {
+         Node root;
+         int leftcounter = 0;
+         int rightcounter = 0;
+        public void Insert(int id)
+        {
+            Node newNode = new Node(id);
+
+            if (root == null)
+            {
+                root = newNode;
+            }
+            else
+            {
+                Node current = root;
+                Node tempParent;
+               
+                while (true)
+                {
+                    tempParent = current;
+                    if (id < current.item)
+                    {
+                        current = current.leftChild;
+                        if (current == null)
+                        {
+                            tempParent.leftChild = newNode;  //store in left!!
+                            Console.WriteLine("LeftChild : " + leftcounter);
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        current = current.rightChild;
+                        if (current == null)
+                        {
+                            tempParent.rightChild = newNode;  //store in right!!
+                            Console.WriteLine("RightChild : " + rightcounter);
+                            return;
+                        }  
+                      
+                    }
+                }
+               
+            }
+        }
+    }
+
+     class Node
+    {
+        public int item;
+        public Node leftChild;
+        public Node rightChild;
+
+        public Node(int item)
+        {
+            this.item = item;
+            leftChild = null;
+            rightChild = null;
+        }
+    }
+
+
+}
+
+//https://msdn.microsoft.com/en-us/library/aa227568(v=vs.60).aspx
+//http://www.c-sharpcorner.com/UploadFile/19b1bd/insertion-deletion-in-a-binary-search-tree-using-C-Sharp/
+//https://chinmaylokesh.wordpress.com/2012/02/16/tree-sort-in-order-traversal-of-a-binary-search-tree/

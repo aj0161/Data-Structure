@@ -1,0 +1,96 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BinarySearchTree
+{
+    class BinaryTree
+    {
+         Node root;
+        
+        public void InsertIteratively(int id)
+        {
+            Node newNode = new Node(id);
+
+            if (root == null)
+            {
+                root = newNode;
+            }
+            else
+            {
+                Node current = root;
+                Node tempParent;
+               
+                while (true)
+                {
+                    tempParent = current;
+                    if (id < current.item)
+                    {
+                        current = current.leftChild;
+                        if (current == null)
+                        {
+                            tempParent.leftChild = newNode;  //store in left!!
+                            Console.WriteLine("LeftChild : " + newNode.item);
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        current = current.rightChild;
+                        if (current == null)
+                        {
+                            tempParent.rightChild = newNode;  //store in right!!
+                            Console.WriteLine("RightChild : " + newNode.item);
+                            return;
+                        }  
+                     
+                    }
+                }
+               
+            }
+        }
+
+        public void InsertRecrusively(int id)
+        {
+            insertRecrusively(null, id);
+        }
+
+        private Node insertRecrusively( Node Rootnode, int id)
+        {
+            if (Rootnode == null)
+              {
+                  return new Node(id);
+              }
+              else
+              {
+                  if (id < Rootnode.item)
+                  {
+                      Rootnode.leftChild = insertRecrusively(Rootnode.leftChild, id);
+                  }
+                  else
+                  {
+                      Rootnode.rightChild = insertRecrusively(Rootnode.rightChild, id);
+                  }
+              }
+            return Rootnode;
+        }
+    }
+
+     class Node
+    {
+        public int item;
+        public Node leftChild;
+        public Node rightChild;
+
+        public Node(int item)
+        {
+            this.item = item;
+            leftChild = null;
+            rightChild = null;
+        }
+    }
+
+
+}

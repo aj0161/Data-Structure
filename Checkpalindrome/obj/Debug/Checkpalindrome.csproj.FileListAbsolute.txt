@@ -1,0 +1,6 @@
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\Checkpalindrome\bin\Debug\Checkpalindrome.exe.config
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\Checkpalindrome\bin\Debug\Checkpalindrome.exe
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\Checkpalindrome\bin\Debug\Checkpalindrome.pdb
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\Checkpalindrome\obj\Debug\Checkpalindrome.csprojResolveAssemblyReference.cache
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\Checkpalindrome\obj\Debug\Checkpalindrome.exe
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\Checkpalindrome\obj\Debug\Checkpalindrome.pdb

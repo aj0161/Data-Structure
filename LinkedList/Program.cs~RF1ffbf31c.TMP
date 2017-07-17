@@ -1,0 +1,144 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LinkedList
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Add First:");
+            Item myItem = new Item();
+            myItem.Zip = 76040;
+            myItem.Address = "west rim drive";
+
+            LinkedList myList1 = new LinkedList();
+            myList1.AddFirst(myItem);
+
+            Item myItem1 = new Item();
+            myItem1.Zip = 32810;
+            myItem1.Address = "west Florida drive";
+            myList1.AddFirst(myItem1);
+                                     
+            Console.WriteLine("Add Last:");
+           
+            Item myItem2 = new Item();
+            myItem2.Zip = 32810;
+            myItem2.Address = "west california drive";
+           myList1.AddLast(myItem2);
+          
+           myList1.PrintAllNodes();
+           myList1.DeleteNthNode();
+            Console.ReadLine();
+        }
+    }
+
+
+    class Node
+    {
+        public Node next;
+        public Item data;
+
+    }
+    class Item
+    {
+        private int zip = 0;
+        public int Zip
+        {
+            get { return zip; }
+            set { zip = value; }
+        }
+       
+
+        private string address;
+        public string Address
+        {
+            get { return address; }
+            set { address = value; }
+        }
+
+    }
+
+    //In a singly linked list each node in the list stores the contents of the node and a pointer or reference to the next node in the list
+    class LinkedList
+    {
+        private Node head;
+
+        public void AddFirst(Item data)
+        {
+            Node toAdd = new Node();
+            toAdd.data = data;
+            toAdd.next = head;
+
+            head = toAdd;
+        }
+
+        public void AddLast(Item data)
+        {
+            if (head == null) // if the linked list is new 
+            {
+                head = new Node();
+                head.data = data;
+                head.next = null;
+            }
+            else
+            {
+                Node toAdd = new Node();
+                toAdd.data = data;
+
+                Node current = head;
+                while (current.next != null)
+                {
+                    current = current.next;  
+                }
+                current.next = toAdd; // add last
+            }
+           
+        }
+
+        public void PrintAllNodes()
+        {
+            if (head == null)
+            {
+                return;
+            }
+            Node current = head;
+            while (current != null)
+            {
+                Console.WriteLine(current.data.Address + "+" + current.data.Zip);
+                current = current.next;
+            }
+        }
+
+        public bool DeleteNthNode(string msg = "")
+        {
+            if (head == null)
+            {
+                return true;
+            }
+            else
+            {
+                if (msg.Equals("First")) // there is only one element
+                {
+                    head = null;
+                    return true;
+                }
+                else // more than one elements
+                {
+                    Node current = head;
+                    while (current.next != null)
+                    {
+                        current = current.next;
+                    }
+
+                }
+                return false;
+            }
+        }
+    }
+
+   
+}

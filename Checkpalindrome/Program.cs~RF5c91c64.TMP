@@ -1,0 +1,74 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Checkpalindrome
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool res = Program.palindrome_iterative("Sore was I ere I saw Eros");
+            bool res1 = Program.palindrome_recrusive("Sore was I ere I saw Eros");
+            Console.WriteLine(  res1);
+        }
+
+
+        private static bool palindrome_iterative(string inp)
+        {
+            if (inp == null)
+                return false;
+
+            if (inp.Length == 0)
+                return true;
+
+            //get rid off comma, space, and making lower case
+            string input = inp.Replace(" ", String.Empty);
+            input = input.ToLower();
+           
+
+            int left = 0, right = input.Length - 1;
+
+            while (right > left)
+            {
+                if (input[right] != input[left])
+                    return false;
+
+                right--;
+                left++;
+
+            }
+            return true;
+        }
+
+        private static bool palindrome_recrusive(string inp)
+        {
+            if (inp == null)
+                return false;
+
+            if (inp.Length == 0)
+                return true;
+
+            //get rid off comma, space, and making lower case
+            string input = inp.Replace(" ", String.Empty);
+            input = input.ToLower();
+
+            return recrusion(inp, 0, inp.Length - 1);
+        }
+
+        private static bool recrusion(string input, int left, int right)
+        {
+            if (input[right] != input[left])
+                return false;
+
+            if (right > left)
+                return true;
+
+            return recrusion(input, left - 1, right + 1);
+
+        }
+    }
+}
