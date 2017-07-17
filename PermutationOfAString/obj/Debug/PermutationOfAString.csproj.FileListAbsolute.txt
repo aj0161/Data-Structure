@@ -1,0 +1,6 @@
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\PermutationOfAString\bin\Debug\PermutationOfAString.exe.config
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\PermutationOfAString\bin\Debug\PermutationOfAString.exe
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\PermutationOfAString\bin\Debug\PermutationOfAString.pdb
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\PermutationOfAString\obj\Debug\PermutationOfAString.csprojResolveAssemblyReference.cache
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\PermutationOfAString\obj\Debug\PermutationOfAString.exe
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\PermutationOfAString\obj\Debug\PermutationOfAString.pdb

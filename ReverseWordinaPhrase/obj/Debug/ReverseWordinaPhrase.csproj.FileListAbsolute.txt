@@ -1,0 +1,6 @@
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\ReverseWordinaPhrase\bin\Debug\ReverseWordinaPhrase.exe.config
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\ReverseWordinaPhrase\obj\Debug\ReverseWordinaPhrase.csprojResolveAssemblyReference.cache
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\ReverseWordinaPhrase\bin\Debug\ReverseWordinaPhrase.exe
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\ReverseWordinaPhrase\bin\Debug\ReverseWordinaPhrase.pdb
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\ReverseWordinaPhrase\obj\Debug\ReverseWordinaPhrase.exe
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\ReverseWordinaPhrase\obj\Debug\ReverseWordinaPhrase.pdb

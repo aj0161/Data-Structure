@@ -1,0 +1,6 @@
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\Spiral2dArrayMatrix\bin\Debug\Spiral2dArrayMatrix.exe.config
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\Spiral2dArrayMatrix\bin\Debug\Spiral2dArrayMatrix.exe
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\Spiral2dArrayMatrix\bin\Debug\Spiral2dArrayMatrix.pdb
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\Spiral2dArrayMatrix\obj\Debug\Spiral2dArrayMatrix.csprojResolveAssemblyReference.cache
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\Spiral2dArrayMatrix\obj\Debug\Spiral2dArrayMatrix.exe
+C:\Users\joshajay\Documents\Visual Studio 2013\Projects\LinkedList\Spiral2dArrayMatrix\obj\Debug\Spiral2dArrayMatrix.pdb

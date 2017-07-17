@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PermutationOfAString
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string str = "abc";
+            Permutate(str, 2);
+        }
+
+
+        //Here is a recursive solution to print all the permutations of a string. 
+        //However, this solution does not take care of duplicates. It is assumed that there are no duplicates in the string.
+        static void Permutate(string letters, int length , string prefix = "")
+        {
+            if (length == 0)
+            {
+                // We have a permutation so print it
+                Console.WriteLine(prefix);
+                return;
+            }
+            for (int i = 0; i < letters.Length; i++)
+            {
+                var newPrefix = prefix + letters[i];
+                Permutate(letters, length - 1, newPrefix);
+            }
+        }
+
+
+        //swap
+        private static void Swap(object left, object right)
+        {
+            object temp = left;
+            left = right;
+            right = temp;
+        }
+    }
+}
